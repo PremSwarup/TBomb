@@ -449,8 +449,8 @@ def start(target, counter, delay, ch, cc):
         print("             Successful Requests     : ", success)
         print("             Failed Requests         : ", failed)
         print("==================================================================")
-        print("              Use this for fun, not for revenge !!                ")
-        print("              This Bomber Was Created By SpeedX !!                ")
+        print("                                                                  ")
+        print("                                                                  ")
         print("==================================================================")
         try:
             result = getapi(target, api, cc)
@@ -545,11 +545,11 @@ try:
 except Exception:
     type = 0
 if type == 1:
-    nm = int(input("Enter Number of Calls To Send(Maximum 15): "))
-    if nm > 15:
+    nm = int(input("Enter Number of Calls To Send(Maximum 999): "))
+    if nm > 999:
         print("\t\tYou Have Entered " + str(nm) +
-              ".\n\tNormalizing Value To 15")
-        nm = 15
+              ".\n\tNormalizing Value To 999")
+        nm = 999
     dl = float(input("Enter Delay time (in seconds) [Recommended 10 sec ] : "))
 elif type == 0:
     if cc == "91":
@@ -562,9 +562,9 @@ elif type == 0:
             input("Enter Delay time (in seconds) [Recommended 10 sec ] : "))
 maxlim = 0
 if cc == "91":
-    maxlim = 500
+    maxlim = 999
 else:
-    maxlim = 100
+    maxlim = 999
 if nm > maxlim:
     print('\n\n\tSorry Due To Misuse Of This Script We Only Provide ' +
           str(maxlim) + ' SMS At Once...\n\n')
